@@ -10,7 +10,7 @@ export class UserComponent  {
 
   price: Price[];
   constructor(public http: Http) {
-    http.get('https://api.fixer.io/latest?symbols=CAD,USD')
+    http.get('https://api.fixer.io/latest?base=CAD')
     .map(resp =>  resp.json()).subscribe((price => {
       this.price= price;
       
