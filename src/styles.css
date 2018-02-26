@@ -11,3 +11,10 @@ input {
 select {
   background-color: lightgrey;
 }
+
+section {
+  height:250px ;
+  width:300px; 
+  border: 1px black solid; 
+  padding: 20px 40px 40px 40px
+}
