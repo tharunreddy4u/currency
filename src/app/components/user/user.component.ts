@@ -7,11 +7,11 @@ import 'rxjs/add/operator/map';
   selector: 'user',
   templateUrl: `./user.component.html`,
 })
-export class UserComponent implements OnInit { 
+export class UserComponent  { 
 
-  price: Price[];
-  price1: Price[];
-  price2: Price[];
+  price: any;
+  price1: any;
+  price2: any;
   val = 0;
   conval = 0;
   optionSelected1: any;
@@ -35,7 +35,8 @@ export class UserComponent implements OnInit {
       
     }));
    
-
+    this.optionSelected1 = "CAD";
+    this.optionSelected2 = "CAD";
   }
   
 
